@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zoma – Télécharger l'app | App Store & Play Store</title>
+  <meta name="description" content="Téléchargez Zoma sur iPhone et Android. Plateforme de location immobilière au Bénin." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --zoma-primary: #22577A;
+      --zoma-primary-dark: #1a4560;
+      --zoma-accent: #38a169;
+      --bg: #f7fafc;
+      --card: #ffffff;
+      --text: #1a202c;
+      --text-muted: #718096;
+      --radius: 16px;
+      --shadow: 0 4px 24px rgba(34, 87, 122, 0.08);
+      --shadow-hover: 0 12px 40px rgba(34, 87, 122, 0.15);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 420px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .logo {
+      width: 88px;
+      height: 88px;
+      margin: 0 auto 1.5rem;
+      background: linear-gradient(145deg, var(--zoma-primary), var(--zoma-primary-dark));
+      border-radius: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #fff;
+      box-shadow: var(--shadow);
+    }
+
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 0.5rem;
+    }
+
+    .tagline {
+      color: var(--text-muted);
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.5rem;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      text-align: left;
+      box-shadow: var(--shadow);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      border: 1px solid rgba(34, 87, 122, 0.06);
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .card:active {
+      transform: translateY(0);
+    }
+
+    .card-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      flex-shrink: 0;
+    }
+
+    .card-ios .card-icon {
+      background: linear-gradient(145deg, #000, #333);
+      color: #fff;
+    }
+
+    .card-android .card-icon {
+      background: linear-gradient(145deg, #3ddc84, #2e7d32);
+      color: #fff;
+    }
+
+    .card-text {
+      flex: 1;
+    }
+
+    .card-title {
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin-bottom: 0.15rem;
+    }
+
+    .card-desc {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .card-arrow {
+      color: var(--zoma-primary);
+      font-size: 1.25rem;
+      flex-shrink: 0;
+    }
+
+    footer {
+      margin-top: 2.5rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    footer a {
+      color: var(--zoma-primary);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo" aria-hidden="true">Z</div>
+    <h1>Zoma</h1>
+    <p class="tagline">Location immobilière au Bénin. Trouvez et gérez vos locations facilement.</p>
+
+    <div class="cards">
+      <a href="https://apps.apple.com/app/zoma-rent/id6756834997" class="card card-ios" rel="noopener noreferrer" target="_blank">
+        <span class="card-icon" aria-hidden="true">🍎</span>
+        <span class="card-text">
+          <span class="card-title">App Store (iPhone / iPad)</span>
+          <span class="card-desc">Télécharger sur l'App Store</span>
+        </span>
+        <span class="card-arrow" aria-hidden="true">→</span>
+      </a>
+      <a href="https://play.google.com/store/apps/details?id=com.tonentreprise.zoma&hl=fr" class="card card-android" rel="noopener noreferrer" target="_blank">
+        <span class="card-icon" aria-hidden="true">▶</span>
+        <span class="card-text">
+          <span class="card-title">Google Play (Android)</span>
+          <span class="card-desc">Télécharger sur le Play Store</span>
+        </span>
+        <span class="card-arrow" aria-hidden="true">→</span>
+      </a>
+    </div>
+
+    <footer>
+      <p>Zoma · Plateforme de location immobilière</p>
+    </footer>
+  </div>
+</body>
+</html>
